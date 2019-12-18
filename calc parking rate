@@ -1,0 +1,71 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	char vehicle;
+	double duration, total;
+	
+	cout << "Types of vehicle ? : C / L / B " << endl;
+	cin>> vehicle;
+	
+	if(vehicle == 'C' || vehicle == 'c')
+	{
+		cout << "\nEnter your parking time duration (in hour) HERE : " ;
+		cin >> duration;
+		
+		if(duration<=3)
+		{
+			total=1*duration;
+		}
+		if(duration>=3)
+		{
+			total=1.5*duration;
+		}
+		
+		cout << "\nThe total price is : RM " << total << endl;
+	}
+	
+	else if(vehicle == 'L' || vehicle == 'l')
+	{
+		cout << "\nEnter your parking time duration (in hour) HERE : " ;
+		cin >> duration;
+		
+		if(duration<=3)
+		{
+			total=1.5*duration;
+		}
+		if(duration>=3)
+		{
+			total=2.5*duration;
+		}
+		
+		cout << "\nThe total price is : RM " << total << endl;
+	}
+
+	else if(vehicle == 'B' || vehicle == 'b')
+	{
+		cout << "\nEnter your parking time duration (in hour) HERE : " ;
+		cin >> duration;
+		
+		if(duration<=3)
+		{
+			total=2*duration;
+		}
+		if(duration>=3)
+		{
+			total=3.5*duration;
+		}
+		
+		cout << "\nThe total price is : RM " << total << endl;
+	}
+	
+	else
+	{
+		cout << "\nYour character is INVALID :) . Pls enter the valid character . TQ <3 " << endl;
+	}
+	
+	return 0;
+	
+}
